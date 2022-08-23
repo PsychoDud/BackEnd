@@ -5,6 +5,7 @@
  */
 package com.portfolioAp.ers.Security.Repository;
 
+import com.portfolioAp.ers.Security.Entity.Usuario;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

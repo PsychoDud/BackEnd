@@ -5,6 +5,8 @@
  */
 package com.portfolioAp.ers.Security.Service;
 
+import com.portfolioAp.ers.Security.Entity.Usuario;
+import com.portfolioAp.ers.Security.Repository.iUsuarioRepository;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;

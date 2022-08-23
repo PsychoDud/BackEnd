@@ -5,6 +5,9 @@
  */
 package com.portfolioAp.ers.Security.Service;
 
+import com.portfolioAp.ers.Security.Entity.Rol;
+import com.portfolioAp.ers.Security.Enums.RolNombre;
+import com.portfolioAp.ers.Security.Repository.iRolRepository;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,4 +26,6 @@ public class RolService {
     public void save(Rol rol){
         irolRepository.save(rol);
     }
+
+   
 }

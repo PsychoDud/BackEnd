@@ -5,6 +5,8 @@
  */
 package com.portfolioAp.ers.Service;
 
+import com.portfolioAp.ers.Entity.Experiencia;
+import com.portfolioAp.ers.Repository.RExperiencia;
 import java.util.List;
 import java.util.Optional;
 import javax.transaction.Transactional;

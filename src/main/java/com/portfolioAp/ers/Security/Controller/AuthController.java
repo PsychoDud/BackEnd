@@ -5,12 +5,27 @@
  */
 package com.portfolioAp.ers.Security.Controller;
 
+import com.portfolioAp.ers.Security.Dto.JwtDto;
+import com.portfolioAp.ers.Security.Dto.LoginUsuario;
+import com.portfolioAp.ers.Security.Dto.NuevoUsuario;
+import com.portfolioAp.ers.Security.Entity.Rol;
+import com.portfolioAp.ers.Security.Entity.Usuario;
+import com.portfolioAp.ers.Security.Enums.RolNombre;
+import com.portfolioAp.ers.Security.Service.RolService;
+import com.portfolioAp.ers.Security.Service.UsuarioService;
+import com.portfolioAp.ers.Security.jwt.JwtProvider;
 import java.util.HashSet;
 import java.util.Set;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;

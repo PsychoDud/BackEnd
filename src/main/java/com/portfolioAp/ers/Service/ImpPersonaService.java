@@ -5,6 +5,9 @@
  */
 package com.portfolioAp.ers.Service;
 
+import com.portfolioAp.ers.Entity.Persona;
+import com.portfolioAp.ers.Interface.IPersonaService;
+import com.portfolioAp.ers.Repository.IPersonaRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

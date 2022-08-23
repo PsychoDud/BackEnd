@@ -5,6 +5,7 @@
  */
 package com.portfolioAp.ers.Repository;
 
+import com.portfolioAp.ers.Entity.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

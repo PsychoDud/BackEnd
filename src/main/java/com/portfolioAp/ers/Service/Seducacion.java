@@ -5,6 +5,8 @@
  */
 package com.portfolioAp.ers.Service;
 
+import com.portfolioAp.ers.Entity.Educacion;
+import com.portfolioAp.ers.Repository.REducacion;
 import java.util.List;
 import java.util.Optional;
 import javax.transaction.Transactional;

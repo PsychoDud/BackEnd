@@ -5,6 +5,7 @@
  */
 package com.portfolioAp.ers.Interface;
 
+import com.portfolioAp.ers.Entity.Persona;
 import java.util.List;
 
 public interface IPersonaService {
